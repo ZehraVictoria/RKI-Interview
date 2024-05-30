@@ -1,0 +1,2 @@
+[console_scripts]
+interview = rki.interview.main:run

@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: rki-interview
+Version: 0.1.0
+Summary: RKI interview project
+License: MIT License
+        
+        Copyright (c) 2024 Robert Koch-Institut
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi
+Requires-Dist: pydantic
+Requires-Dist: pytest
+Requires-Dist: mypy
+Requires-Dist: ruff
+Requires-Dist: uvicorn
+
+# RKI interview challenge
+
+Welcome to this RKI python interview challenge. We are building a small API to help us
+with our interview process, but we need your help finishing it.
+
+The checklists below will guide you through the setup of the project and give you a few
+small tasks to work on for yourself. Some of the steps may require some online research.
+
+Should you have any questions during the process, please feel free to contact your
+interviewers at any time. It's always better to ask, then to get stuck.
+
+## setup and installation
+- [x] find this readme file and follow the check-list
+- [ ] clone this git repository to your local machine
+- [ ] create a new python virtual environment
+- [ ] install this project in the new environment
+
+## running and testing
+- [ ] start the server with the `interview` command
+- [ ] take a look at the api documentation http://127.0.0.1:8000/docs
+- [ ] click on the "GET candidates" endpoint, then "Try it out" and "Execute"
+- [ ] you should now see a response from the server with a JSON body
+
+## finally, your tasks
+- [ ] add your favorite (fictional) interview candidate to the `dummy_database`
+- [ ] create a new optional field on the `Candidate` model for `birthday`
+- [ ] run the tests with the `pytest` command and ensure they pass
+- [ ] bonus task: create a `POST` endpoint to add new candidates to the `dummy_database`

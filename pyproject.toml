@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rki-interview"
+version = "0.1.0"
+description = "RKI interview project"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+dependencies = ["fastapi", "pydantic", "pytest", "mypy", "ruff", "uvicorn"]
+
+[project.scripts]
+interview = "rki.interview.main:run"
